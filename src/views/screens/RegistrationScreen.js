@@ -71,24 +71,29 @@ const styleSheet = StyleSheet.create({
   input: {
     height: 40,
     margin: 12,
-    
+    paddingLeft: 30,
     borderRadius: 15,
     borderColor: '#45DE88',
     borderWidth: 2,
-    padding: 25,
+    width: 300,
+    height: 50,
   },
   appContainer: {
     paddingTop: 50,
-    flex: 1,
     paddingHorizontal: 16,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   button: {
     backgroundColor:'#45DE88', 
-    paddingHorizontal:19,
+    width: 280,
+    height: 50,
     marginVertical:10,
     padding:10,
     borderRadius:200,
-    }
+    },
+    
+
 })
 
 export default RegistartionScreen;
