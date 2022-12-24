@@ -1,19 +1,19 @@
 import * as React from 'react';
 import { View , Text, Button} from 'react-native';
 
-function HomeScreen({ navigation }) {
+function TrotiScreen({ navigation }) {
   
   
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text style={{ fontSize: 40}}>search troti</Text>
+      <Text style={{ fontSize: 40}}>troti show</Text>
       <Button
-        title="Troti"
-        onPress={() => navigation.push('Troti')}
+        title="Home"
+        onPress={() => navigation.push('Home')}
       />
     </View>
   );
 }
 
 
-export default HomeScreen;
+export default TrotiScreen;

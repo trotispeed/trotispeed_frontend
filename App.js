@@ -9,6 +9,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './src/views/screens/HomeScreen';
 import LoginScreen from './src/views/screens/LoginScreen';
 import RegistrationScreen from './src/views/screens/RegistrationScreen';
+import TrotiScreen from './src/views/screens/TrotiScreen';
+
 
 
 
@@ -22,6 +24,7 @@ function App() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Register" component={RegistrationScreen} />
+        <Stack.Screen name="Troti" component={TrotiScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

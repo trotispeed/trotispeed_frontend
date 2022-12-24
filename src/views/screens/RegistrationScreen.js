@@ -1,17 +1,12 @@
 import * as React from 'react';
-import { Button, View, Text, StyleSheet, TextInput, Pressable, TouchableOpacity, Image } from 'react-native';
+import { View, Text, StyleSheet, TextInput, TouchableOpacity, Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { useFonts } from 'expo-font';
-import AppLoading from 'expo-app-loading';
 
 
 
 function RegistartionScreen({ navigation }) {
   const [number, onChangeNumber] = React.useState(null);
-  let [fontsLoaded] = useFonts({
-    'Righteous': require('../../../assets/fonts/Righteous-Regular.ttf'),
-  });
 
 
 
@@ -52,14 +47,14 @@ function RegistartionScreen({ navigation }) {
       style={styleSheet.button}
       onPress={() => navigation.push('Login')}
       >
-        <Text style={{textAlign:'center', color:'white', fontSize:20, fontFamily: 'Righteous'}}>login</Text>
+        <Text style={{textAlign:'center', color:'white', fontSize:20}}>login</Text>
       </TouchableOpacity>
 
       <TouchableOpacity 
       style={styleSheet.button}
       onPress={() => navigation.push('Home')}
       >
-        <Text style={{textAlign:'center', color:'white', fontSize:20, fontFamily: 'Righteous'}}>register</Text>
+        <Text style={{textAlign:'center', color:'white', fontSize:20}}>sign up</Text>
       </TouchableOpacity>
 
     </View>
@@ -74,7 +69,7 @@ const styleSheet = StyleSheet.create({
     marginBottom: 50,
     fontSize: 30,
     color:'grey',
-    fontFamily: 'Righteous',
+    
   },
   input: {
     height: 40,
@@ -85,7 +80,7 @@ const styleSheet = StyleSheet.create({
     borderWidth: 2,
     width: 300,
     height: 50,
-    fontFamily: 'Righteous'
+    
   },
   appContainer: {
     paddingTop: 50,
