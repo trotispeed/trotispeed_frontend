@@ -16,7 +16,7 @@ function RegistartionScreen({ navigation }) {
       
       
       <Image style={styleSheet.Image} source={require('../../../assets/fonts/TrotiSpeed1.png')} />
-      <Text style={styleSheet.title}>Login</Text>
+      <Text style={styleSheet.title}>sign up</Text>
 
 
 
@@ -83,24 +83,26 @@ const styleSheet = StyleSheet.create({
     
   },
   appContainer: {
-    paddingTop: 50,
-    paddingHorizontal: 16,
     alignItems: 'center',
     justifyContent: 'center',
+    flex: 1,
     backgroundColor: '#FFFFFF',
   },
   button: {
     backgroundColor:'#45DE88', 
+    marginTop:20,
     width: 280,
     height: 50,
     marginVertical:10,
     padding:10,
     borderRadius:200,
+    
     },
     Image: {
       height: 100,
       width: 350,
-    },
+      
+    }
     
 
 })

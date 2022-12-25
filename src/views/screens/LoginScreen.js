@@ -13,7 +13,7 @@ function LoginScreen({ navigation }) {
   return (
     <View style={styleSheet.appContainer}>
     <Image style={styleSheet.Image} source={require('../../../assets/fonts/TrotiSpeed1.png')} />
-      <Text style={styleSheet.title}>Login</Text>
+      <Text style={styleSheet.title}>sign</Text>
 
 
 
@@ -41,7 +41,7 @@ function LoginScreen({ navigation }) {
       </TouchableOpacity>
 
       <TouchableOpacity 
-      style={styleSheet.button}
+      style={styleSheet.Button}
       onPress={() => navigation.push('Register')}
       >
         <Text style={{textAlign:'center', color:'white', fontSize:20}}>sign up</Text>
@@ -63,30 +63,47 @@ const styleSheet = StyleSheet.create({
   },
   input: {
     height: 40,
-    margin: 12,
+    margin: 15,
     paddingLeft: 30,
+    borderRadius: 15,
+    borderColor: '#45DE88',
+    borderWidth: 2,
     width: 300,
+    height: 50,
   },
     appContainer: {
-    paddingTop: 50,
-    paddingHorizontal: 16,
     alignItems: 'center',
     justifyContent: 'center',
+    flex: 1,
     backgroundColor: '#FFFFFF',
   },
   button: {
     backgroundColor:'#45DE88', 
+    marginTop:20,
     width: 280,
     height: 50,
     marginVertical:10,
     padding:10,
     borderRadius:200,
     
+    
     },
     Image: {
       height: 100,
       width: 350,
+      
+    },
+    Button: {
+      backgroundColor:'#45DE88', 
+    marginTop:20,
+    width: 280,
+    height: 50,
+    marginVertical:10,
+    padding:10,
+    borderRadius:200,
+    marginBottom: 50,
     }
+
 })
 
 export default LoginScreen;

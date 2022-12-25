@@ -20,11 +20,11 @@ const Stack = createNativeStackNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login">
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Login" component={LoginScreen} />
-        <Stack.Screen name="Register" component={RegistrationScreen} />
-        <Stack.Screen name="Troti" component={TrotiScreen} />
+      <Stack.Navigator  initialRouteName="Login">
+        <Stack.Screen  name="Home" component={HomeScreen} options={{headerShown: false,}}/>
+        <Stack.Screen name="Login" component={LoginScreen} options={{headerShown: false,}}/>
+        <Stack.Screen name="Register" component={RegistrationScreen} options={{headerShown: false,}}/>
+        <Stack.Screen name="Troti" component={TrotiScreen} options={{headerShown: false,}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -11,6 +11,10 @@ function HomeScreen({ navigation }) {
         title="Troti"
         onPress={() => navigation.push('Troti')}
       />
+      <Button
+        title="login"
+        onPress={() => navigation.push('Login')}
+      />
     </View>
   );
 }
