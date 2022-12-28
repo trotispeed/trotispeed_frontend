@@ -13,7 +13,7 @@ function LoginScreen({ navigation }) {
   return (
     <View style={styleSheet.appContainer}>
     <Image style={styleSheet.Image} source={require('../../../assets/fonts/TrotiSpeed1.png')} />
-      <Text style={styleSheet.title}>sign</Text>
+      <Text style={styleSheet.title}>login</Text>
 
 
 
@@ -29,8 +29,11 @@ function LoginScreen({ navigation }) {
         placeholderTextColor={'#45DE88'}
         onChangeText={onChangeNumber}
         placeholder="PASSWORD"
+        
+        secureTextEntry={true}
       />
 
+<Text style={{color:'red'}}>Password incorrect</Text>
      
 
       <TouchableOpacity 
@@ -70,6 +73,7 @@ const styleSheet = StyleSheet.create({
     borderWidth: 2,
     width: 300,
     height: 50,
+    color:'grey',
   },
     appContainer: {
     alignItems: 'center',

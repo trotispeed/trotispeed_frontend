@@ -32,15 +32,18 @@ function RegistartionScreen({ navigation }) {
         placeholderTextColor={'#45DE88'}
         onChangeText={onChangeNumber}
         placeholder="PASSWORD"
+        secureTextEntry={true}
       />
 
 <TextInput
         style={styleSheet.input}
         placeholderTextColor={'#45DE88'}
         onChangeText={onChangeNumber}
-        placeholder="Confirmer Password"
+        placeholder="CONFIRME PASSWORD"
+        secureTextEntry={true}
       />
 
+<Text style={{color:'red'}}>Password incorrect</Text>
      
 
       <TouchableOpacity 
@@ -77,6 +80,7 @@ const styleSheet = StyleSheet.create({
     paddingLeft: 30,
     borderRadius: 15,
     borderColor: '#45DE88',
+    color:'grey',
     borderWidth: 2,
     width: 300,
     height: 50,
