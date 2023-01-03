@@ -14,6 +14,7 @@ import TrotiScreen from './src/views/screens/TrotiScreen';
 
 
 
+
 const Stack = createNativeStackNavigator();
 
 function App() {

@@ -3,12 +3,22 @@ import { View, Text, StyleSheet, TextInput, TouchableOpacity, Image } from 'reac
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useFonts } from 'expo-font';
-import AppLoading from 'expo-app-loading';
+import AppLoading from 'expo-app-loading'
+import { Login } from '../../api/user';
 
 
 function LoginScreen({ navigation }) {
-  const [number, onChangeNumber] = React.useState(null);
   
+
+  const [username, setUserName] = React.useState('');
+  const [password, setPassword] = React.useState('');
+  
+   function  handleLogin () {
+  const data = {name:username,password};
+   return Login(data, navigation);
+  
+}
+
 
   return (
     <View style={styleSheet.appContainer}>
@@ -20,25 +30,27 @@ function LoginScreen({ navigation }) {
       <TextInput
         style={styleSheet.input}
         placeholderTextColor={'#45DE88'}
-        onChangeText={onChangeNumber}
+        onChangeText={setUserName}
+        value={username}
         placeholder="USERNAME"
       />
 
       <TextInput
         style={styleSheet.input}
         placeholderTextColor={'#45DE88'}
-        onChangeText={onChangeNumber}
+        onChangeText={setPassword}
+        value={password}
         placeholder="PASSWORD"
         
         secureTextEntry={true}
       />
 
-<Text style={{color:'red'}}>Password incorrect</Text>
+{/* <Text style={{color:'red'}}>Password incorrect</Text> */}
      
 
       <TouchableOpacity 
       style={styleSheet.button}
-      onPress={() => navigation.push('Home')}
+      onPress={handleLogin}
       >
         <Text style={{textAlign:'center', color:'white', fontSize:20}}>login</Text>
       </TouchableOpacity>
