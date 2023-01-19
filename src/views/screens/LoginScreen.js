@@ -70,10 +70,7 @@ function LoginScreen({navigation}) {
 
 const styleSheet = StyleSheet.create({
     title: {
-        textAlign: 'center',
-        marginBottom: 50,
-        fontSize: 30,
-        color: 'grey',
+        
 
     },
     input: {

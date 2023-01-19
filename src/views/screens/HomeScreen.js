@@ -8,29 +8,30 @@ const DATA = [
   {
     id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
     title: 'first',
+    image: 'https://i2-prod.birminghammail.co.uk/incoming/article24325693.ece/ALTERNATES/s615b/1_like-mother-lik-848023.jpg',
+
   },
   {
     id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
     title: 'Second',
+    image: 'https://i2-prod.birminghammail.co.uk/incoming/article24325693.ece/ALTERNATES/s615b/1_like-mother-lik-848023.jpg',
   },
   {
     id: '58694a0f-3da1-471f-bd96-145571e29d72',
     title: 'Third',
+    image: 'https://i2-prod.birminghammail.co.uk/incoming/article24325693.ece/ALTERNATES/s615b/1_like-mother-lik-848023.jpg',
   },
   {
     id: '58694a0f-3da1-471f-bd96-145571e29d76',
     title: 'Four',
+    image: 'https://i2-prod.birminghammail.co.uk/incoming/article24325693.ece/ALTERNATES/s615b/1_like-mother-lik-848023.jpg',
   },
   {
     id: '58694a0f-3da1-471f-bd96-145571e29d47',
     title: 'Five',
+    image: 'https://i2-prod.birminghammail.co.uk/incoming/article24325693.ece/ALTERNATES/s615b/1_like-mother-lik-848023.jpg',
   },
 ];
-
-
-
-
-
 
 
 
@@ -64,7 +65,7 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome @ Chaimae</Text>
+      <Text style={styles.title1}>Welcome @ Chaimae</Text>
       <TextInput
                 style={styles.input}
                 placeholderTextColor={'#45DE88'}
@@ -97,9 +98,10 @@ const Item = ({item, onPress, backgroundColor, textColor}) => (
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#FFFFFF',
+    alignItems: 'center',
+    justifyContent: 'center',
     flex: 1,
-    marginTop: 30,
+    backgroundColor: '#FFFFFF',
     
   },
   item: {
@@ -110,8 +112,12 @@ const styles = StyleSheet.create({
     marginHorizontal: 8,
     borderRadius: 15,
   },
-  title: {
-    fontSize: 10,
+  title1: {
+    textAlign: 'center',
+    marginTop: 300,
+    marginBottom: 15,
+    fontSize: 15,
+    color: 'grey',
   },
   input: {
     height: 40,
@@ -125,10 +131,7 @@ const styles = StyleSheet.create({
     color: 'grey',
 },
 title: {
-  textAlign: 'center',
-  marginBottom: 15,
-  fontSize: 20,
-  color: 'grey',
+  fontSize: 15,
 
 },
 });
