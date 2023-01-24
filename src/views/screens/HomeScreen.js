@@ -1,35 +1,32 @@
 import React, {useState} from 'react';
-import { FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity, TextInput, View} from 'react-native';
+import { FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity, TextInput, View, Image} from 'react-native';
 import { withSafeAreaInsets } from 'react-native-safe-area-context';
-
 
 
 const DATA = [
   {
     id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
-    title: 'first',
-    image: 'https://i2-prod.birminghammail.co.uk/incoming/article24325693.ece/ALTERNATES/s615b/1_like-mother-lik-848023.jpg',
-
+    image: require('../../img/mi.png'),
   },
   {
     id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
-    title: 'Second',
-    image: 'https://i2-prod.birminghammail.co.uk/incoming/article24325693.ece/ALTERNATES/s615b/1_like-mother-lik-848023.jpg',
+    image: require('../../img/ka.png'),
+    
   },
   {
     id: '58694a0f-3da1-471f-bd96-145571e29d72',
-    title: 'Third',
-    image: 'https://i2-prod.birminghammail.co.uk/incoming/article24325693.ece/ALTERNATES/s615b/1_like-mother-lik-848023.jpg',
+    image: require('../../img/ra.png'),
+    
   },
   {
     id: '58694a0f-3da1-471f-bd96-145571e29d76',
     title: 'Four',
-    image: 'https://i2-prod.birminghammail.co.uk/incoming/article24325693.ece/ALTERNATES/s615b/1_like-mother-lik-848023.jpg',
+   
   },
   {
     id: '58694a0f-3da1-471f-bd96-145571e29d47',
     title: 'Five',
-    image: 'https://i2-prod.birminghammail.co.uk/incoming/article24325693.ece/ALTERNATES/s615b/1_like-mother-lik-848023.jpg',
+    
   },
 ];
 
@@ -73,6 +70,7 @@ const HomeScreen = () => {
                 value={username}
                 placeholder="SEARCH"
             />
+            
     <SafeAreaView >
       <FlatList horizontal
         data={DATA}
@@ -80,6 +78,7 @@ const HomeScreen = () => {
         keyExtractor={item => item.id}
         extraData={selectedId}
       />
+      
     </SafeAreaView>
     </View>
     
@@ -89,7 +88,11 @@ const HomeScreen = () => {
 const Item = ({item, onPress, backgroundColor, textColor}) => (
   
   <TouchableOpacity onPress={onPress} style={[styles.item, {backgroundColor}]}>
-    <Text style={[styles.title, {color: textColor}]}>{item.title}</Text>
+    
+    <Image
+        style={styles.image}
+        source= {item.image}
+      />
   </TouchableOpacity>
 );
 
@@ -105,9 +108,9 @@ const styles = StyleSheet.create({
     
   },
   item: {
-    height: 100,
-    width: 115,
-    padding: 20,
+    height: 120,
+    width: 130,
+    
     marginVertical: 8,
     marginHorizontal: 8,
     borderRadius: 15,
@@ -134,6 +137,14 @@ title: {
   fontSize: 15,
 
 },
+image:{
+  height: 100,
+    width: 115,
+    padding: 20,
+    marginVertical: 8,
+    marginHorizontal: 8,
+    borderRadius: 15,
+}
 });
 
 
