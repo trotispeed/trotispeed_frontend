@@ -60,9 +60,6 @@ const TestScreen = () => {
             </ScrollView>
 
 
-
-
-
         </View>
     );
 };
@@ -105,7 +102,7 @@ const styles = StyleSheet.create({
         backgroundColor: "#45DE88",
         marginTop: 10,
         padding: 50,
-        borderRadius: 10,
+        borderRadius: 30,
         height: 310,
         width: 360,
 
