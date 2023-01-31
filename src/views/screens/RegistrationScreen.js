@@ -71,12 +71,12 @@ function RegistartionScreen({navigation}) {
                 <Text style={{textAlign: 'center', color: 'white', fontSize: 20}}>Sign up</Text>
             </TouchableOpacity>
 
-            {/*<TouchableOpacity*/}
-            {/*    style={styleSheet.button}*/}
-            {/*    onPress={() => navigation.push('Home')}*/}
-            {/*>*/}
-            {/*    <Text style={{textAlign: 'center', color: 'white', fontSize: 20}}>sign up</Text>*/}
-            {/*</TouchableOpacity>*/}
+            <TouchableOpacity
+                style={styleSheet.button}
+               onPress={() => navigation.push('Login')}
+            >
+                <Text style={{textAlign: 'center', color: 'white', fontSize: 20}}>sign up</Text>
+            </TouchableOpacity>
 
         </View>);
 }

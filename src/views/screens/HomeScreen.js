@@ -1,37 +1,32 @@
 import React, {useState} from 'react';
 import { FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity, TextInput, View, Image} from 'react-native';
 import { withSafeAreaInsets } from 'react-native-safe-area-context';
+import TrotiScreen from '../screens/TrotiScreen';
+import {Home} from '../../api/user';
 
 
-const DATA = [
+const DATA2 = [
   {
-    id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
+    id: '1',
     image: require('../../img/mi.png'),
   },
   {
-    id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
+    id: '2',
     image: require('../../img/ka.png'),
     
   },
   {
-    id: '58694a0f-3da1-471f-bd96-145571e29d72',
+    id: '3',
     image: require('../../img/ra.png'),
-    
   },
   {
-    id: '58694a0f-3da1-471f-bd96-145571e29d76',
+    id: '4',
     title: 'Four',
+    image: require('../../img/ka.png'),
    
   },
-  {
-    id: '58694a0f-3da1-471f-bd96-145571e29d47',
-    title: 'Five',
-    
-  },
+  
 ];
-
-
-
 
 
 
@@ -40,6 +35,7 @@ const DATA = [
 const HomeScreen = () => {
   const [selectedId, setSelectedId] = useState();
   const [username, setUserName] = React.useState('');
+  const [DATA , SetData] = useState(DATA2)
   
   
  
@@ -57,12 +53,14 @@ const HomeScreen = () => {
         backgroundColor={backgroundColor}
         textColor={color}
       />
+      
     );
   };
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title1}>Welcome @ Chaimae</Text>
+      
+      <Text style={styles.title1}>Welcome @ <Text style={styles.chai}>Chaimae</Text></Text>
       <TextInput
                 style={styles.input}
                 placeholderTextColor={'#45DE88'}
@@ -80,10 +78,15 @@ const HomeScreen = () => {
       />
       
     </SafeAreaView>
+{/* here is the component */}
     </View>
     
+    
   );
+  
 };
+
+
 
 const Item = ({item, onPress, backgroundColor, textColor}) => (
   
@@ -93,9 +96,10 @@ const Item = ({item, onPress, backgroundColor, textColor}) => (
         style={styles.image}
         source= {item.image}
       />
+      
   </TouchableOpacity>
+  
 );
-
 
 
 
@@ -105,12 +109,16 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     flex: 1,
     backgroundColor: '#FFFFFF',
-    
+
+  },
+  chai: {
+    color: 'red',
   },
   item: {
-    height: 120,
-    width: 130,
-    
+    height: 130,
+    width: 150,
+    paddingLeft: 10,
+    paddingTop: 5,
     marginVertical: 8,
     marginHorizontal: 8,
     borderRadius: 15,
@@ -146,8 +154,5 @@ image:{
     borderRadius: 15,
 }
 });
-
-
-
 
 export default HomeScreen;

@@ -1,19 +1,19 @@
-import * as React from 'react';
-import { View , Text, Button} from 'react-native';
+import React from 'react';
+import { Container, Content, List, ListItem, Text, Header, Title, Button, Icon, View } from 'react-native';
 
-function TrotiScreen({ navigation }) {
+const TrotiScreen = (props) => {
+
+  return(
+      <View >
+          <Text style = {{ flex: 4, backgroundColor: "red", alignItems: 'center', justifyContent: 'center', }}>hello waaa le9elawiiiiiiii</Text>
+          <Text style = {{ flex: 1, backgroundColor: "red", alignItems: 'center', justifyContent: 'center', }}>hello waaa zepppiiiivsdvsvvaav</Text>
+          <Text style = {{ flex: 1, backgroundColor: "red", alignItems: 'center', justifyContent: 'center', }}>hello waaa zeppiiiadafasvsvdvsvsdvds</Text>
+
+          
+      </View>
+  )};
   
-  
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text style={{ fontSize: 40}}>troti show</Text>
-      <Button
-        title="Home"
-        onPress={() => navigation.push('Home')}
-      />
-    </View>
-  );
-}
 
 
-export default TrotiScreen;
+  export default TrotiScreen;
+

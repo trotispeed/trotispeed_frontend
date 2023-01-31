@@ -58,7 +58,7 @@ function LoginScreen({navigation}) {
 
             <TouchableOpacity
                 style={styleSheet.Button}
-                onPress={() => navigation.push('Home')}
+                onPress={() => navigation.push('Register')}
             >
                 <Text style={{textAlign: 'center', color: 'white', fontSize: 20}}>sign up</Text>
             </TouchableOpacity>
@@ -70,7 +70,7 @@ function LoginScreen({navigation}) {
 
 const styleSheet = StyleSheet.create({
     title: {
-        
+        textAlign: 'center', marginBottom: 50, fontSize: 30, color: 'grey',
 
     },
     input: {
@@ -104,6 +104,7 @@ const styleSheet = StyleSheet.create({
     Image: {
         height: 100,
         width: 350,
+        
 
     },
     Button: {

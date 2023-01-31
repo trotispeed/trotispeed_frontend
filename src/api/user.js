@@ -26,3 +26,13 @@ export const register =  async (credentials, nav , set) => {
         });
 }
 
+export const Home =  async (credentials, nav , set) => {
+    await Api.post('brands/',credentials).then(function (response) {
+        console.log(response.data)
+        nav.push('Home')
+    })
+      .catch(function (error) {
+        console.log(error);
+        set(1)
+      });
+}
