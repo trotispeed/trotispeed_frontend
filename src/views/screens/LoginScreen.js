@@ -58,7 +58,7 @@ function LoginScreen({navigation}) {
 
             <TouchableOpacity
                 style={styleSheet.Button}
-                onPress={() => navigation.push('Test')}
+                onPress={() => navigation.push('Map')}
             >
                 <Text style={{textAlign: 'center', color: 'white', fontSize: 20}}>sign up</Text>
             </TouchableOpacity>

@@ -20,7 +20,7 @@ function RegistartionScreen({navigation}) {
                 const data = {name: username, password};
                 return register(data, navigation, setIncorrect);
             }else{
-                alert("Password is too short")
+                alert("Password is too short 8 chracter")
             }
 
         } else {

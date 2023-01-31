@@ -1,8 +1,6 @@
 //import liraries
 import React, {useState} from 'react';
-import { View, Text, StyleSheet, TextInput, SafeAreaView, FlatList, ScrollView, ScrollViewComponent } from 'react-native';
-
-
+import { View, Text, StyleSheet, TextInput, SafeAreaView, FlatList, ScrollView, TouchableOpacity, Image } from 'react-native';
 
 
 // create a component
@@ -24,7 +22,7 @@ const TestScreen = () => {
         {title:"xaiomi pro3", key: "3"},
         {title:"xaiomi pro4", key: "4"},
         {title:"xaiomi pro4", key: "5"},
-        {title:"xaiomi pro4", key: "6"}
+        {title:"xaiomi pro4", key: "6"},
         
     ]);
 
@@ -40,20 +38,29 @@ const TestScreen = () => {
             />
 
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+            
             {data.map((data)=>{
                 return(
                 <View >
-                    <Text style={styles.title}>{data.title}</Text>
+                    <TouchableOpacity activeOpacity={0.5}>
+                        <Image />
+                        <Text style={styles.title}>{data.title}</Text>
+                    </TouchableOpacity>
                 </View>
                 )
             })}
             </ScrollView>
 
-            <ScrollView showsVerticalScrollIndicator={false}>
+         <ScrollView showsVerticalScrollIndicator={false}>
+
             {data2.map((data2)=>{
                 return(
                 <View >
+                    <TouchableOpacity activeOpacity={0.5}>
+                        <Image />
                     <Text style={styles.troti}>{data2.title}</Text>
+                    
+                    </TouchableOpacity>
                 </View>
                 )
             })}
