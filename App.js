@@ -9,7 +9,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './src/views/screens/HomeScreen';
 import LoginScreen from './src/views/screens/LoginScreen';
 import RegistrationScreen from './src/views/screens/RegistrationScreen';
-import TrotiScreen from './src/views/screens/TrotiScreen';
+
+import TestScreen from './src/views/screens/TestScreen';
 
 
 
@@ -25,7 +26,7 @@ function App() {
         <Stack.Screen  name="Home" component={HomeScreen} options={{headerShown: false,}}/>
         <Stack.Screen name="Login" component={LoginScreen} options={{headerShown: false,}}/>
         <Stack.Screen name="Register" component={RegistrationScreen} options={{headerShown: false,}}/>
-        <Stack.Screen name="Troti" component={TrotiScreen} options={{headerShown: false,}}/>
+        <Stack.Screen name="Test" component={TestScreen} options={{headerShown: false,}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -60,7 +60,7 @@ const HomeScreen = () => {
   return (
     <View style={styles.container}>
       
-      <Text style={styles.title1}>Welcome @ <Text style={styles.chai}>Chaimae</Text></Text>
+      
       <TextInput
                 style={styles.input}
                 placeholderTextColor={'#45DE88'}
@@ -69,7 +69,7 @@ const HomeScreen = () => {
                 placeholder="SEARCH"
             />
             
-    <SafeAreaView >
+    <SafeAreaView>
       <FlatList horizontal
         data={DATA}
         renderItem={renderItem}
