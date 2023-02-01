@@ -1,7 +1,10 @@
+//import liraries
 import React from 'react';
 import MapView from 'react-native-maps';
 import { StyleSheet, View } from 'react-native';
 
+
+// create a component
 export default function MapScreen() {
   return (
     <View style={styles.container}>
@@ -11,6 +14,9 @@ export default function MapScreen() {
   );
 }
 
+
+
+// define your styles
 const styles = StyleSheet.create({
   container: {
     flex: 1,

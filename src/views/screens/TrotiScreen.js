@@ -1,31 +1,28 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import {StyleSheet, View} from 'react-native';
 
 const TrotiScreen = () => {
+  return (
+    <View
+      style={[
+        styles.container,
+        {
+          // Try setting `flexDirection` to `"row"`.
+          flexDirection: 'column',
+        },
+      ]}>
+      <View style={{flex: 1, backgroundColor: 'red'}} />
+      <View style={{flex: 5, backgroundColor: 'darkorange'}} />
+      <View style={{flex: 2, backgroundColor: 'green'}} />
+    </View>
+  );
+};
 
-  return(
-      <View style={styles.container}>
-        
-          
-      </View>
-  )};
-  // define your styles
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#ffffff',
-        
-    },
-
-
-
-
+  container: {
+    flex: 1,
+  },
 });
 
-//make this component available to the app
-
-
-  export default TrotiScreen;
+export default TrotiScreen;
 

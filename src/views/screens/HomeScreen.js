@@ -1,8 +1,7 @@
+//import liraries
 import React, {useState} from 'react';
 import { FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity, TextInput, View, Image} from 'react-native';
-import { withSafeAreaInsets } from 'react-native-safe-area-context';
-import TrotiScreen from '../screens/TrotiScreen';
-import {Home} from '../../api/user';
+
 
 
 const DATA2 = [
@@ -31,7 +30,7 @@ const DATA2 = [
 
 
 
-
+// create a component
 const HomeScreen = () => {
   const [selectedId, setSelectedId] = useState();
   const [username, setUserName] = React.useState('');
@@ -102,7 +101,7 @@ const Item = ({item, onPress, backgroundColor, textColor}) => (
 );
 
 
-
+// define your styles
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',

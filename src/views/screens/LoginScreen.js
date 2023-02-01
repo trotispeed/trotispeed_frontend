@@ -1,8 +1,11 @@
+//import liraries
 import * as React from 'react';
 import {Image, StyleSheet, Text, TextInput, TouchableOpacity, View} from 'react-native';
 import {Login} from '../../api/user';
 
 
+
+// create a component
 function LoginScreen({navigation}) {
 
 
@@ -58,7 +61,7 @@ function LoginScreen({navigation}) {
 
             <TouchableOpacity
                 style={styleSheet.Button}
-                onPress={() => navigation.push('Map')}
+                onPress={() => navigation.push('Troti')}
             >
                 <Text style={{textAlign: 'center', color: 'white', fontSize: 20}}>sign up</Text>
             </TouchableOpacity>
@@ -68,6 +71,8 @@ function LoginScreen({navigation}) {
 }
 
 
+
+// define your styles
 const styleSheet = StyleSheet.create({
     title: {
         textAlign: 'center', marginBottom: 50, fontSize: 30, color: 'grey',

@@ -1,8 +1,11 @@
+//import liraries
 import * as React from 'react';
-import {Image, StyleSheet, Text, TextInput, TouchableOpacity, View} from 'react-native';
-import {Login} from '../../api/user';
+import {StyleSheet, Text, TextInput, TouchableOpacity, View} from 'react-native';
 
 
+
+
+// create a component
 function ValidScreen({navigation}) {
 
 
@@ -72,6 +75,8 @@ function ValidScreen({navigation}) {
 }
 
 
+
+// define your styles
 const styleSheet = StyleSheet.create({
     title: {
         textAlign: 'center', marginBottom: 50, fontSize: 30, color: 'grey',
@@ -124,4 +129,6 @@ const styleSheet = StyleSheet.create({
 
 })
 
+
+//make this component available to the app
 export default ValidScreen;

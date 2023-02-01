@@ -1,7 +1,10 @@
+//import liraries
 import * as React from 'react';
 import {Image, StyleSheet, Text, TextInput, TouchableOpacity, View} from 'react-native';
 import {register} from '../../api/user';
 
+
+// create a component
 function RegistartionScreen({navigation}) {
 
     const [username, setUserName] = React.useState('');
@@ -82,6 +85,9 @@ function RegistartionScreen({navigation}) {
 }
 
 
+
+
+// define your styles
 const styleSheet = StyleSheet.create({
     title: {
         textAlign: 'center', marginBottom: 50, fontSize: 30, color: 'grey',

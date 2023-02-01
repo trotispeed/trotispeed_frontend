@@ -1,6 +1,6 @@
 //import liraries
 import React, {useState} from 'react';
-import { View, Text, StyleSheet, TextInput, SafeAreaView, FlatList, ScrollView, TouchableOpacity, Image } from 'react-native';
+import { View, Text, StyleSheet, TextInput, ScrollView, TouchableOpacity, Image } from 'react-native';
 
 
 // create a component
@@ -8,21 +8,21 @@ const TestScreen = () => {
 
     const [username, setUserName] = React.useState('');
     const [data , SetData] = useState([
-        {title:"xaiomi pro", key: "1"},
-        {title:"xaiomi pro2", key: "2"},
-        {title:"xaiomi pro3", key: "3"},
-        {title:"xaiomi pro4", key: "4"},
-        {title:"xaiomi pro4", key: "5"},
-        {title:"xaiomi pro4", key: "6"},
+        {title:"xaiomi pro",key: 1},
+        {title:"xaiomi pro2",key: 2},
+        {title:"xaiomi pro3",key: 3},
+        {title:"xaiomi pro4",key: 4},
+        {title:"xaiomi pro4",key: 5},
+        {title:"xaiomi pro4",key: 6}
         
     ]);
     const [data2 , SetData2] = useState([
-        {title:"xaiomi pro", key: "1"},
-        {title:"xaiomi pro2", key: "2"},
-        {title:"xaiomi pro3", key: "3"},
-        {title:"xaiomi pro4", key: "4"},
-        {title:"xaiomi pro4", key: "5"},
-        {title:"xaiomi pro4", key: "6"},
+        {title:"xaiomi pro 7",key: 7},
+        {title:"xaiomi pro 8",key: 8},
+        {title:"xaiomi pro 9",key: 9},
+        {title:"xaiomi pro 10",key: 10},
+        {title:"xaiomi pro 11",key: 11},
+        {title:"xaiomi pro 12",key: 12}
         
     ]);
 
@@ -70,6 +70,8 @@ const TestScreen = () => {
         </View>
     );
 };
+
+
 
 // define your styles
 const styles = StyleSheet.create({

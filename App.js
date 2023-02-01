@@ -1,7 +1,6 @@
-// In App.js in a new project
+//import liraries
 
 import * as React from 'react';
-import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -13,11 +12,9 @@ import TrotiScreen from './src/views/screens/TrotiScreen';
 import TestScreen from './src/views/screens/TestScreen';
 import ValidScreen from './src/views/screens/ValidScreen';
 import MapScreen from './src/views/screens/MapScreen';
+import CounterScreen from './src/views/screens/CounterScreen';
 
-
-
-
-
+// navigation component
 
 const Stack = createNativeStackNavigator();
 
@@ -32,6 +29,7 @@ function App() {
         <Stack.Screen name="Troti" component={TrotiScreen} options={{headerShown: false,}}/>
         <Stack.Screen name="Valid" component={ValidScreen} options={{headerShown: false,}}/>
         <Stack.Screen name="Map" component={MapScreen} options={{headerShown: false,}}/>
+        <Stack.Screen name="Counter" component={CounterScreen} options={{headerShown: false,}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
