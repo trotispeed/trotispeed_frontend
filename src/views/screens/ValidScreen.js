@@ -25,7 +25,7 @@ function ValidScreen({navigation}) {
                 placeholderTextColor={'#45DE88'}
                 onChangeText={setUserName}
                 value={username}
-                placeholder="USERNAME"
+                placeholder="FULL NAME"
             />
 
             <TextInput
@@ -33,7 +33,7 @@ function ValidScreen({navigation}) {
                 placeholderTextColor={'#45DE88'}
                 onChangeText={setPassword}
                 value={password}
-                placeholder="PASSWORD"
+                placeholder="N Tele"
                 secureTextEntry={true}
             />
                         <TextInput
@@ -41,7 +41,7 @@ function ValidScreen({navigation}) {
                 placeholderTextColor={'#45DE88'}
                 onChangeText={setPassword}
                 value={password}
-                placeholder="PASSWORD"
+                placeholder="Gmail"
                 secureTextEntry={true}
             />
                         <TextInput
@@ -49,7 +49,7 @@ function ValidScreen({navigation}) {
                 placeholderTextColor={'#45DE88'}
                 onChangeText={setPassword}
                 value={password}
-                placeholder="PASSWORD"
+                placeholder="CIN"
                 secureTextEntry={true}
             />
                         <TextInput
