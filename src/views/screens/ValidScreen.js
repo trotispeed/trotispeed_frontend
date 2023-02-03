@@ -52,17 +52,6 @@ function ValidScreen({navigation}) {
                 placeholder="CIN"
                 secureTextEntry={true}
             />
-                        <TextInput
-                style={styleSheet.input}
-                placeholderTextColor={'#45DE88'}
-                onChangeText={setPassword}
-                value={password}
-                placeholder="PASSWORD"
-                secureTextEntry={true}
-            />
-
-
-
 
             <TouchableOpacity
                 style={styleSheet.button}
