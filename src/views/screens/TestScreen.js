@@ -56,7 +56,11 @@ const TestScreen = ({navigation}) => {
             {data2.map((data2)=>{
                 return(
                 <View >
-                    <TouchableOpacity activeOpacity={0.5} onPress={() => navigation.push('Valid')}>
+
+
+                    <TouchableOpacity activeOpacity={0.5} onPress={() => navigation.push('Troti')}>
+
+
                         <Image />
                     <Text style={styles.troti}>{data2.title}</Text>
                     

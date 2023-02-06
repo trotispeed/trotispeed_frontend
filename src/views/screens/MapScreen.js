@@ -1,6 +1,6 @@
-//import liraries
 import React from 'react';
 import MapView from 'react-native-maps';
+<<<<<<< HEAD
 import { StyleSheet, TouchableOpacity, View, Text } from 'react-native';
 import { Marker } from 'react-native-maps';
 
@@ -30,13 +30,11 @@ export default function MapScreen({navigation}) {
                 <Text style={{textAlign: 'center', color: 'white', fontSize: 20,justifyContent:'center'}}>Submit</Text>
         </TouchableOpacity>
       </View>
+
     </View>
   );
 }
 
-
-
-// define your styles
 const styles = StyleSheet.create({
   container: {
     flex: 1,

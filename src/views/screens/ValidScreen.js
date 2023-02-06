@@ -13,9 +13,6 @@ function ValidScreen({navigation}) {
     const [password, setPassword] = React.useState('');
     const [incorrect, setIncorrect] = React.useState(0);
 
-
-
-
     return (
         <View style={styleSheet.appContainer}>
             <Text style={styleSheet.title}>validation</Text>
