@@ -13,9 +13,6 @@ function ValidScreen({navigation}) {
     const [password, setPassword] = React.useState('');
     const [incorrect, setIncorrect] = React.useState(0);
 
-
-
-
     return (
         <View style={styleSheet.appContainer}>
             <Text style={styleSheet.title}>validation</Text>
@@ -54,7 +51,7 @@ function ValidScreen({navigation}) {
             />
 
             <TouchableOpacity
-                style={styleSheet.button}
+                style={styleSheet.button} onPress={() => navigation.push('Map')}
             >
                 <Text style={{textAlign: 'center', color: 'white', fontSize: 20}}>validation</Text>
             </TouchableOpacity>
