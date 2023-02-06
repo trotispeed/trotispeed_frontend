@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, TextInput, ScrollView, TouchableOpacity, Image 
 
 
 // create a component
-const TestScreen = () => {
+const TestScreen = ({navigation}) => {
 
     const [username, setUserName] = React.useState('');
     const [data , SetData] = useState([
@@ -56,7 +56,7 @@ const TestScreen = () => {
             {data2.map((data2)=>{
                 return(
                 <View >
-                    <TouchableOpacity activeOpacity={0.5}>
+                    <TouchableOpacity activeOpacity={0.5} onPress={() => navigation.push('Valid')}>
                         <Image />
                     <Text style={styles.troti}>{data2.title}</Text>
                     

@@ -7,7 +7,7 @@ import Api from './api';
 export const Login =  async (credentials, nav , set) => {
     await Api.post('register/',credentials).then(function (response) {
         console.log(response.data)
-        nav.push('Home')
+        nav.push('Test')
     })
       .catch(function (error) {
         console.log(error);
@@ -18,7 +18,7 @@ export const Login =  async (credentials, nav , set) => {
 export const register =  async (credentials, nav , set) => {
     await Api.post('login/',credentials).then(function (response) {
         console.log(response.data)
-        nav.push('Home')
+        nav.push('Test')
     })
         .catch(function (error) {
             console.log('🥵 error =>' , error);

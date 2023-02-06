@@ -78,7 +78,7 @@ function RegistartionScreen({navigation}) {
                 style={styleSheet.button}
                onPress={() => navigation.push('Login')}
             >
-                <Text style={{textAlign: 'center', color: 'white', fontSize: 20}}>sign up</Text>
+                <Text style={{textAlign: 'center', color: 'white', fontSize: 20}}>Login</Text>
             </TouchableOpacity>
 
         </View>);

@@ -8,7 +8,7 @@ import { View, Text, StyleSheet } from 'react-native';
 const CounterScreen = () => {
     return (
         <View style={styles.container}>
-            <Text>MyComponent</Text>
+            <View></View>
         </View>
     );
 };
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#2c3e50',
+        backgroundColor: 'white',
     },
 });
 
