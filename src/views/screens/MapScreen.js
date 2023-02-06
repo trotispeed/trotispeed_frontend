@@ -1,6 +1,5 @@
 import React from 'react';
 import MapView from 'react-native-maps';
-<<<<<<< HEAD
 import { StyleSheet, TouchableOpacity, View, Text } from 'react-native';
 import { Marker } from 'react-native-maps';
 
