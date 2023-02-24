@@ -30,16 +30,7 @@ export const register =  async (credentials, nav , set) => {
 
 // this is brands api
 
-export const Test =  async (credentials, nav , set) => {
-  await Api.get('brands/',credentials).then(function (response) {
-      console.log(response.data)
-      nav.push('Home')
-  })
-    .catch(function (error) {
-      console.log(error);
-      set(1)
-    });
-}
+
 
 // this is scooters api
 /*export const Test =  async (credentials, nav , set) => {
@@ -56,9 +47,9 @@ export const Test =  async (credentials, nav , set) => {
 // this is validation api
 
 export const Valid =  async (credentials, nav , set) => {
-  await Api.post('Valid/',credentials).then(function (response) {
+  await Api.post('validation',credentials).then(function (response) {
       console.log(response.data)
-      nav.push('Home')
+      nav.push('Map')
   })
     .catch(function (error) {
       console.log(error);
@@ -67,15 +58,4 @@ export const Valid =  async (credentials, nav , set) => {
 }
 
 
-// this is Counter api
 
-export const Counter =  async (credentials, nav , set) => {
-  await Api.get('Valid/',credentials).then(function (response) {
-      console.log(response.data)
-      nav.push('Home')
-  })
-    .catch(function (error) {
-      console.log(error);
-      set(1)
-    });
-}

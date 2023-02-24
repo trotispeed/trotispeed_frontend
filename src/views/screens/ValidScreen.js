@@ -1,6 +1,7 @@
 //import liraries
 import * as React from 'react';
 import {StyleSheet, Text, TextInput, TouchableOpacity, View} from 'react-native';
+import {Valid} from '../../api/user';
 
 
 
@@ -10,8 +11,16 @@ function ValidScreen({navigation}) {
 
 
     const [username, setUserName] = React.useState('');
-    const [password, setPassword] = React.useState('');
+    const [tele, setTele] = React.useState('');
+    const [email, setEmail] = React.useState('');
+    const [cin, setCin] = React.useState('');
     const [incorrect, setIncorrect] = React.useState(0);
+
+    function handleLogin() {
+        const data = {user_name: username, email: email, scooter_id: 1, cin: cin, number: tele };
+        console.log("frtghygtf +++++++==",data)
+        return Valid(data, navigation, setIncorrect);
+    }
 
     return (
         <View style={styleSheet.appContainer}>
@@ -22,33 +31,39 @@ function ValidScreen({navigation}) {
                 placeholderTextColor={'#45DE88'}
                 onChangeText={setUserName}
                 value={username}
-                placeholder="FULL NAME"
+                placeholder="User ame"
             />
 
             <TextInput
                 style={styleSheet.input}
                 placeholderTextColor={'#45DE88'}
-                onChangeText={setPassword}
-                value={password}
+                onChangeText={setTele}
+                value={tele}
                 placeholder="N Tele"
-                secureTextEntry={true}
+               
             />
                         <TextInput
                 style={styleSheet.input}
                 placeholderTextColor={'#45DE88'}
-                onChangeText={setPassword}
-                value={password}
+                onChangeText={setEmail}
+                value={email}
                 placeholder="Gmail"
-                secureTextEntry={true}
+                
             />
                         <TextInput
                 style={styleSheet.input}
                 placeholderTextColor={'#45DE88'}
-                onChangeText={setPassword}
-                value={password}
+                onChangeText={setCin}
+                value={cin}
                 placeholder="CIN"
-                secureTextEntry={true}
+                
             />
+            <TouchableOpacity
+                style={styleSheet.button}
+                onPress={handleLogin}
+            >
+                <Text style={{textAlign: 'center', color: 'white', fontSize: 20}}>login</Text>
+            </TouchableOpacity>
 
             <TouchableOpacity
                 style={styleSheet.button} onPress={() => navigation.push('Map')}

@@ -14,7 +14,7 @@ const DATA2 = [
     image: require('../../img/ka.png'),
     
   },
-  {
+  { 
     id: '3',
     image: require('../../img/ra.png'),
   },
