@@ -62,14 +62,10 @@ function ValidScreen({navigation}) {
                 style={styleSheet.button}
                 onPress={handleLogin}
             >
-                <Text style={{textAlign: 'center', color: 'white', fontSize: 20}}>login</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity
-                style={styleSheet.button} onPress={() => navigation.push('Map')}
-            >
                 <Text style={{textAlign: 'center', color: 'white', fontSize: 20}}>validation</Text>
             </TouchableOpacity>
+
+            
 
         </View>
     );

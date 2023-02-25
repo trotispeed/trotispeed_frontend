@@ -7,24 +7,8 @@ import { View, Text, StyleSheet, TextInput, ScrollView, TouchableOpacity, Image 
 const TestScreen = ({navigation}) => {
 
     const [username, setUserName] = React.useState('');
-    const [data , SetData] = useState([
-        {title:"xaiomi pro",key: 1},
-        {title:"xaiomi pro2",key: 2},
-        {title:"xaiomi pro3",key: 3},
-        {title:"xaiomi pro4",key: 4},
-        {title:"xaiomi pro4",key: 5},
-        {title:"xaiomi pro4",key: 6}
-        
-    ]);
-    const [data2 , SetData2] = useState([
-        {title:"xaiomi pro 7",key: 7},
-        {title:"xaiomi pro 8",key: 8},
-        {title:"xaiomi pro 9",key: 9},
-        {title:"xaiomi pro 10",key: 10},
-        {title:"xaiomi pro 11",key: 11},
-        {title:"xaiomi pro 12",key: 12}
-        
-    ]);
+    const [data , SetData] = useState([]);
+    const [data2 , SetData2] = useState([]);
 
     return (
         <View style={styles.container}>
@@ -39,35 +23,63 @@ const TestScreen = ({navigation}) => {
 
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
             
-            {data.map((data)=>{
-                return(
+            
                 <View >
                     <TouchableOpacity activeOpacity={0.5}>
-                        <Image />
-                        <Text style={styles.title}>{data.title}</Text>
+                        <Image style={styles.title} source={require('../../img/mi.png')}/>
+                        
                     </TouchableOpacity>
                 </View>
-                )
-            })}
+                <View >
+                    <TouchableOpacity activeOpacity={0.5}>
+                        <Image style={styles.title} source={require('../../img/ra.png')}/>
+                        
+                    </TouchableOpacity>
+                </View>
+                <View >
+                    <TouchableOpacity activeOpacity={0.5}>
+                        <Image style={styles.title} source={require('../../img/ka.png')}/>
+                        
+                    </TouchableOpacity>
+                </View>
+                
+                
             </ScrollView>
 
          <ScrollView showsVerticalScrollIndicator={false}>
 
-            {data2.map((data2)=>{
-                return(
+            
                 <View >
 
 
                     <TouchableOpacity activeOpacity={0.5} onPress={() => navigation.push('Troti')}>
 
-
-                        <Image />
-                    <Text style={styles.troti}>{data2.title}</Text>
                     
+                        <Image style={styles.troti} source={require('../../img/scooter.png')}/>
+                        
                     </TouchableOpacity>
                 </View>
-                )
-            })}
+                <View >
+
+
+                    <TouchableOpacity activeOpacity={0.5} onPress={() => navigation.push('Troti')}>
+
+                    
+                        <Image style={styles.troti} source={require('../../img/scooter.png')}/>
+                        
+                    </TouchableOpacity>
+                </View>
+                <View >
+
+
+                    <TouchableOpacity activeOpacity={0.5} onPress={() => navigation.push('Troti')}>
+
+                    
+                        <Image style={styles.troti} source={require('../../img/scooter.png')}/>
+                        
+                    </TouchableOpacity>
+                </View>
+            
             </ScrollView>
 
 
@@ -108,7 +120,7 @@ const styles = StyleSheet.create({
         padding: 10,
         marginLeft: 10,
         marginBottom: 90,
-        borderRadius: 20,
+        borderRadius: 30,
 
     },
     troti:{
@@ -116,8 +128,8 @@ const styles = StyleSheet.create({
         marginTop: 10,
         padding: 50,
         borderRadius: 30,
-        height: 310,
-        width: 360,
+        height: 400,
+        width: 380,
 
     }
 
